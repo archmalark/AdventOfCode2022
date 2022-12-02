@@ -6,9 +6,7 @@
 (defn calculateChoiceScore [choice] 
   (+ (mod (- (int (.charAt  choice 0)) 1) 3) 1)
   )
-(defn parseElement [element]
-  (str/split element #" ")
-  )
+
  
  (defn asciiMod [inputstring]
    (mod (int (.charAt  inputstring 0)) 3)
